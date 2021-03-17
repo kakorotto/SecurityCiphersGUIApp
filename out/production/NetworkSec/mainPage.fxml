@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <VBox fx:id="Vbox" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0">
+            <Label id="shiny-orange" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="350.0" stylesheets="@mainCSS.css" text="Network Security Ciphers" textAlignment="CENTER" translateX="70.0" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+            <padding>
+               <Insets bottom="20.0" left="50.0" top="20.0" />
+            </padding>
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+      </Label> 
+            <HBox prefHeight="53.0" prefWidth="370.0">
+            <Label id="shiny-orange" layoutX="10.0" layoutY="31.0" stylesheets="@mainCSS.css" text="Caesar Cipher">
+                <HBox.margin>
+                    <Insets left="70.0" top="10.0" />
+                </HBox.margin></Label>
+            <Button id="round-red" fx:id="caesarID" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#caesarAction" stylesheets="@mainCSS.css" text="Click Here">
+                <HBox.margin>
+                    <Insets left="150.0" top="15.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+
+            <HBox prefHeight="53.0" prefWidth="370.0">
+            <Label id="shiny-orange" layoutX="10.0" layoutY="31.0" stylesheets="@mainCSS.css" text="playfair Cipher">
+                <HBox.margin>
+                    <Insets left="70.0" top="10.0" />
+                </HBox.margin></Label>
+            <Button id="round-red" fx:id="playfairID" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#playfairAction" stylesheets="@mainCSS.css" text="Click Here">
+                <HBox.margin>
+                    <Insets left="139.0" top="15.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+
+            <HBox prefHeight="53.0" prefWidth="370.0">
+            <Label id="shiny-orange" layoutX="10.0" layoutY="31.0" stylesheets="@mainCSS.css" text="Feistel Cipher">
+                <HBox.margin>
+                    <Insets left="70.0" top="10.0" />
+                </HBox.margin></Label>
+            <Button id="round-red" fx:id="feistelID" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#feistelAction" stylesheets="@mainCSS.css" text="Click Here">
+                <HBox.margin>
+                    <Insets left="145.0" top="5.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+
+            <HBox prefHeight="53.0" prefWidth="370.0">
+            <Label id="shiny-orange" layoutX="10.0" layoutY="31.0" stylesheets="@mainCSS.css" text="DES Cipher">
+                <HBox.margin>
+                    <Insets left="70.0" top="10.0" />
+                </HBox.margin></Label>
+            <Button id="round-red" fx:id="desID" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#desAction" stylesheets="@mainCSS.css" text="Click Here">
+                <HBox.margin>
+                    <Insets left="160.0" top="5.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+
+            <HBox prefHeight="53.0" prefWidth="370.0">
+            <Label id="shiny-orange" layoutX="10.0" layoutY="31.0" stylesheets="@mainCSS.css" text="RC4 Cipher">
+                <HBox.margin>
+                    <Insets left="70.0" top="10.0" />
+                </HBox.margin></Label>
+            <Button id="round-red" fx:id="rc4ID" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#rc4Action" stylesheets="@mainCSS.css" text="Click Here">
+                <HBox.margin>
+                    <Insets left="160.0" top="5.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+
+            <HBox prefHeight="53.0" prefWidth="370.0">
+            <Label id="shiny-orange" layoutX="10.0" layoutY="31.0" stylesheets="@mainCSS.css" text="RSA Cipher">
+                <HBox.margin>
+                    <Insets left="70.0" top="10.0" />
+                </HBox.margin></Label>
+            <Button id="round-red" fx:id="rsaID" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#rsaAction" stylesheets="@mainCSS.css" text="Click Here">
+                <HBox.margin>
+                    <Insets left="160.0" top="5.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+
+        </VBox>
+
+        </children>
+    </AnchorPane>
